@@ -4,9 +4,9 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "dev": "node api.js && tsx watch src/server.ts",
-    "build": "node api.js && tsc -p tsconfig.json",
-    "start": "node api.js && node dist/server.js",
+    "dev": "node init && tsx watch src/server.ts",
+    "build": "node init && tsc -p tsconfig.json",
+    "start": "node init && node dist/server.js",
     "typecheck": "tsc --noEmit -p tsconfig.typecheck.json",
     "lint": "eslint src --ext .ts",
     "test": "vitest run",
